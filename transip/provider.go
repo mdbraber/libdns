@@ -13,7 +13,7 @@ import (
 type Provider struct {
 	AccountName    string `json:"account_name"`
 	PrivateKeyPath string `json:"private_key_path"`
-	repository     transipdomain.Repository
+	repository     *transipdomain.Repository
 	mutex          sync.Mutex
 }
 

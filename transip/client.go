@@ -18,7 +18,7 @@ func (p *Provider) setupRepository() error {
 		if err != nil {
 			return err
 		}
-		p.repository = transipdomain.Repository{Client: client}
+		p.repository = &transipdomain.Repository{Client: client}
 	}
 
 	return nil
